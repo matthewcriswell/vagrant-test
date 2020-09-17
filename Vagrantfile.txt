@@ -1,0 +1,11 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "kborax/k3os"
+  config.vm.provider "hyperv"
+  config.vm.network "public_network"
+
+end
